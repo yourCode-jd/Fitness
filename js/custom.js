@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".products_list").slick({
+  $("").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: false,
@@ -7,7 +7,7 @@ $(document).ready(function () {
     centerMode: true,
     focusOnSelect: true,
     rows: 0,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 1500,
     responsive: [
       {
