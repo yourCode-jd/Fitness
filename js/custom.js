@@ -1,13 +1,13 @@
 $(document).ready(function () {
-  $("").slick({
+  $(".products_listSlide").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     dots: false,
-    arrows: false,
-    centerMode: true,
+    arrows: true,
+    centerMode: false,
     focusOnSelect: true,
     rows: 0,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1500,
     responsive: [
       {

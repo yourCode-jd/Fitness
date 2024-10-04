@@ -80,20 +80,47 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 2;
+  z-index: 1;
   background: #fff;
   font-size: 0;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "";
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  display: block;
+}
+
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+  background: #ffffffad;
+}
+
+.slick-prev:before {
+  background-image: url(../Images/arrowL.svg);
+}
+
+.slick-next:before {
+  background-image: url(../Images/arrowR.svg);
 }
 
 .slick-prev.slick-arrow {
-  left: 0;
+  left: 20px;
 }
 
 .slick-next.slick-arrow {
-  right: 0;
+  right: 20px;
 }
 
 .slick-dots li button:before {
@@ -144,7 +171,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
   backdrop-filter: blur(10px);
   background-color: #0000004d;
 }
@@ -364,6 +391,15 @@ header {
   position: relative;
   overflow: hidden;
   display: inline-flex;
+  max-height: 550px;
+}
+
+.products_listSlide .product_wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  max-height: 450px;
+  width: 100%;
 }
 
 .discount_badge {
@@ -392,11 +428,11 @@ header {
   top: auto;
   bottom: 0;
   width: 100%;
-  height: 40%;
-  background: rgb(0 0 0);
+  height: 35%;
+  background: rgb(0 0 0 / 50%);
   display: block;
   z-index: 1;
-  filter: blur(70px);
+  filter: blur(30px);
 }
 
 .products_title:before {
@@ -446,6 +482,12 @@ header {
 .main_price {
   color: var(--white-color);
   font-weight: 500;
+}
+
+.productContent .main_price {
+  color: var(--red-color);
+  font-weight: 500;
+  margin-right: 3px;
 }
 
 .price_discount {
@@ -592,6 +634,21 @@ header {
   color: var(--black-100-color);
   font-weight: 500;
   text-align: center;
+}
+
+.productContent .products_title {
+  font-size: 18px;
+  color: var(--black-100-color);
+  margin: 8px 0 0;
+}
+
+.productContent .products_title:before,
+.products_listSlide .product_wrapper:before {
+  display: none;
+}
+
+.products_listSlide .products_items {
+  margin: 10px;
 }
 
 footer {
