@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  // menu toggle
+  $(".toggle_icon").click(function () {
+    $("body").toggleClass("nav_open");
+  });
+  //
+
   $(".products_listSlide").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -57,7 +63,19 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 991,
         settings: {
           slidesToShow: 3,
         },
