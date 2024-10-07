@@ -176,6 +176,10 @@ header {
   background-color: #0000004d;
 }
 
+.nav_open {
+  overflow: hidden;
+}
+
 .mobile_nav {
   display: none;
 }
