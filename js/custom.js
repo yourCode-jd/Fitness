@@ -35,4 +35,23 @@ $(document).ready(function () {
       },
     ],
   });
+  $(".TrendingProduct_list").slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    rows: 0,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
+  });
 });
+
+TrendingProduct_list;
