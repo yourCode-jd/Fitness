@@ -13,6 +13,12 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
           slidesToShow: 1,
         },
       },
@@ -27,6 +33,12 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 1500,
     responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
       {
         breakpoint: 768,
         settings: {
